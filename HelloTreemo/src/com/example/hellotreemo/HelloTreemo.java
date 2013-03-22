@@ -58,7 +58,7 @@ public class HelloTreemo extends ListActivity {
 		super.onCreate(savedInstanceState);
 	      setContentView(R.layout.main);
 	      
-	      searchTerm = "AndroidDev";
+	      searchTerm = "#AndroidDev";
 	      
 	      myTweets = fetchTwitterTimeline(searchTerm);
 	      

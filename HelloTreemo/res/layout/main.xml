@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+    
+    <RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:background="#bbdd99"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingTop="5dp"
+android:paddingLeft="5dp"
+android:paddingRight="5dp">
+            
+            
+            
+            
+            <Button
+            android:id="@+id/buttonRefresh"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Refresh" />
+            
+            <TextView
+            android:id="@+id/textPre"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="6pt"
+            android:textColor="#000000"/>
+            
+            <TextView
+            android:id="@+id/textTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textPre"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-5dp"
+            android:textSize="10pt"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+      
+      <ListView 
+      android:id="@id/android:list"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawSelectorOnTop="false"
+      android:visibility="gone" />
+
+      <ListView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/twitterList"
+      android:layout_weight="1"/>
+      
+      <RelativeLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="5dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp">
+            
+          <EditText 
+              android:id="@+id/text_result"
+              android:inputType="text"
+              android:textSize="20sp"
+              android:hint="Search Twitter..."
+              android:layout_marginRight="70dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"/>
+            
+          <Button
+            android:id="@+id/buttonSearch"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Search" />
+            
+    </RelativeLayout>
+
+    
+</LinearLayout>
